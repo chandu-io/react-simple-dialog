@@ -1,8 +1,8 @@
 {
-  "name": "react-ts",
+  "name": "react-simple-dialog",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
-  "keywords": ["typescript", "react", "starter"],
+  "description": "Simple Dialog POC",
+  "keywords": ["typescript", "react"],
   "main": "src/index.tsx",
   "dependencies": {
     "react": "^16.12.0",
