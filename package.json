@@ -1,8 +1,8 @@
 {
-  "name": "react-simple-dialog",
+  "name": "gitchandu-react-simple-dialog",
   "version": "1.0.0",
-  "description": "Simple Dialog POC",
-  "keywords": ["typescript", "react"],
+  "description": "",
+  "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
     "react": "^16.12.0",

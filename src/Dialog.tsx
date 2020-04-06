@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 type DialogProps = {
   header?: JSX.Element;
@@ -11,20 +11,13 @@ type DialogProps = {
   // closeOnEsc?: boolean;
 };
 export default function Dialog(props: DialogProps) {
-  const {
-    header,
-    footer,
-    children,
-    show: initialShow,
-    onClose,
-    closeOnBlur = true
-  } = props;
+  const { header, footer, children, show: initialShow, onClose, closeOnBlur = true } = props;
   const [show, setShow] = React.useState(initialShow);
   React.useEffect(() => setShow(initialShow), [initialShow]);
   return show ? (
     <div
       className="fixed inset-0 w-screen h-screen"
-      style={{ backgroundColor: "rgba(10, 10, 10, 0.33)" }}
+      style={{ backgroundColor: 'rgba(10, 10, 10, 0.33)' }}
       onClick={() => {
         if (closeOnBlur) {
           setShow(false);
@@ -34,7 +27,7 @@ export default function Dialog(props: DialogProps) {
     >
       <div
         className="m-auto max-w-sm rounded overflow-hidden shadow-lg fixed inset-0 flex flex-col bg-white"
-        style={{ maxHeight: "15rem" }}
+        style={{ maxHeight: '15rem' }}
       >
         {header}
         <div className="flex-grow">{children}</div>

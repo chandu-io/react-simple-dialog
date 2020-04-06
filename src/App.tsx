@@ -1,5 +1,5 @@
-import * as React from "react";
-import Dialog from "./Dialog";
+import * as React from 'react';
+import Dialog from './Dialog';
 
 /**
  * App to demonstrate a dialog box
@@ -35,9 +35,7 @@ export default function App() {
         onClose={() => setShow(false)}
         closeOnBlur={true}
       >
-        <div className="px-4 text-gray-700 text-base">
-          Sample dialog box demo
-        </div>
+        <div className="px-4 text-gray-700 text-base">You've opened an awesome dialog box</div>
       </Dialog>
     </div>
   );
