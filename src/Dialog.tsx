@@ -5,7 +5,7 @@ type DialogProps = {
   footer?: JSX.Element;
   children: JSX.Element;
   show?: boolean;
-  onClose: () => void;
+  onClose?: () => void;
   closeOnBlur?: boolean;
   // TODO
   // closeOnEsc?: boolean;
@@ -18,8 +18,8 @@ export default function Dialog(props: DialogProps) {
     <div
       className="fixed inset-0 w-screen h-screen"
       style={{ backgroundColor: 'rgba(10, 10, 10, 0.33)' }}
-      onClick={() => {
-        if (closeOnBlur) {
+      onClick={e => {
+        if (closeOnBlur && onClose && e.currentTarget === e.target) {
           setShow(false);
           onClose();
         }
